@@ -1,0 +1,21 @@
+server:
+  error:
+    include-message: always
+  port: 8084
+spring:
+  application:
+    name: UaaBackend
+  datasource:
+    password: '@maduka1'
+    url: jdbc:postgresql://localhost:5432/uaa_backend
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+welcome:
+  message: Welcome to daily maduka coding place !!
